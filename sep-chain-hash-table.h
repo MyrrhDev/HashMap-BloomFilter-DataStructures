@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <set>
-#include "hashFunctions.h"
+#include "hash-functions.h"
 using namespace std;
 
 const int TABLE_SIZE = 11;
@@ -17,63 +17,53 @@ struct SeparateChainingHashTableSet {
 public:
   
 private:
+    // numero de elementos de la tabla
+    int counter;      
+    hash_table_vector table;
+    H hasher;
   
-  int counter;      // numero de elementos de la tabla
-  hash_table_vector table;
-  H hasher;
   
-  // Complejidad: O(n)
-  void resize() {
-    hash_table_vector table_tmp(2*table.size());
-    for (uint i = 0; i < table.size(); ++i) {
-      for (auto it = table[i].begin(); it!=table[i].end(); ++it) {
-        int key = *it;
-        uint position = hasher.get_hash(key)%table_tmp.size();
-        table_tmp[position].insert(key);
-      }
+    void resize() {
+        hash_table_vector table_tmp(2*table.size());
+        for (uint i = 0; i < table.size(); ++i) {
+            for (auto it = table[i].begin(); it!=table[i].end(); ++it) {
+                int key = *it;
+                uint position = hasher.get_hash(key)%table_tmp.size();
+                table_tmp[position].insert(key);
+            }
+        }
+        table=table_tmp;
     }
-    table=table_tmp;
-  }
   
   
 public:
-  SeparateChainingHashTableSet() {
-    table = hash_table_vector(TABLE_SIZE);
-    counter = 0;    
-  }
+    SeparateChainingHashTableSet() {
+        table = hash_table_vector(TABLE_SIZE);
+        counter = 0;    
+    }
   
-  /*Inserta un elemento 'key' en la tabla
-  Coste: O(1)
-  El peor de los casos, todas las entradas irian al mismo set: O(n)*/
-  void insert(int key) {
-    uint position = hasher.get_hash(key)%table.size();
-    auto it = table[position].find(key);
-    if (it! = table[position].end()) return;
-    
-    table[position].insert(key);
-    ++counter;
-    if (counter >= 2*(int)table.size()) resize();
-  }
+    void insert(int key) {
+        uint position = hasher.get_hash(key)%table.size();
+        auto it = table[position].find(key);
+        if (it! = table[position].end()) return;
+        
+        table[position].insert(key);
+        ++counter;
+        if (counter >= 2*(int)table.size()) resize();
+    }
   
-  /*Eliminar 'key' de la hash table
-  Coste: O(1)
-  El peor de los casos, todas las entradas irian al mismo set: O(n)*/
-  void erase(int key) {
-    uint position = hasher.get_hash(key)%table.size();
-    auto it = table[position].find(key);
-    if (it! = table[position].end()) table[position].erase(it);
-  }
-  
-  /*Retorna si 'key' existe en la hash table
-  Coste: O(1)
-  El peor de los casos, se recorre el numero de entradas: O(n)*/
-  bool contains(int key) {
-    uint position = hasher.get_hash(key)%table.size();
-    auto it = table[position].find(key);
-    if (it! = table[position].end()) return true;
-    return false;
-  }
-  
+    void erase(int key) {
+        uint position = hasher.get_hash(key)%table.size();
+        auto it = table[position].find(key);
+        if (it! = table[position].end()) table[position].erase(it);
+    }  
+
+    bool contains(int key) {
+        uint position = hasher.get_hash(key)%table.size();
+        auto it = table[position].find(key);
+        if (it! = table[position].end()) return true;
+        return false;
+    }  
 };
 
 

@@ -2,7 +2,7 @@
 #define OPEN_HASH_TABLE_H
 
 #include <vector>
-#include "hashFunctions.h"
+#include "hash-functions.h"
 using namespace std;
 
 // Open Addressing Hash Table
@@ -52,7 +52,7 @@ public:
     if (hash_table[pos] == NULL) {      
       ++counter;
       hash_table[pos] = new int(key);
-      if (counter>=(int)(0.8*hash_table.size())) resize();
+      if (counter >= (int)(0.8*hash_table.size())) resize();
     }
   }
     
