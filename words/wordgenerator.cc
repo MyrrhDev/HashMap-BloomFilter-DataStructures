@@ -1,36 +1,43 @@
 #include <iostream>
 #include <fstream>
+#include <sstream>
 #include <algorithm>
 #include <cstdlib>
-#include <ctime>
 #include <string>
 #include <vector>
 #include <set>
 using namespace std;
 
+const uint MAX_WORD_LEN = 1e9;
 
 const char* EXPER_PREFIX="exper-";
 const char* DICT_EXT=".dict";
 const char* TXT_EXT=".txt";
 
-const uint MAX_WORD_LEN = 1e9;
-
 set<uint> dict;
 vector<uint> text;
 
-// vector<float> cambiar_probabilidades() {
-//     vector<float> test;
-//     
-//     while(cin >> floatie and ) {
-//         test.push_back(floatie);
-//     }
-//     
-//     return test;
-// }
+bool isFloat( string myString ) {
+    istringstream iss(myString);
+    float f;
+    iss >> noskipws >> f;    
+    return iss.eof() && !iss.fail(); 
+}
+
+vector<float> cambiar_probabilidades() {
+    cout << "Escribe que probabilidades (float) quieres probar, escribe 'done' para terminar" << endl;
+    vector<float> test;
+    string probs;
+    while(cin >> probs and isFloat(probs)) {
+            float floatie = stof(probs);
+            test.push_back(floatie);
+    }    
+    return test;
+}
 
 void save_dict_file(int type, uint n, uint dict_arr[]) {
     string dic_file_name(EXPER_PREFIX+to_string(type)+'-'+to_string(n)+DICT_EXT);
-    cout<<"Writing dictionary file ("<<dic_file_name<<")"<<endl;
+    cout << "Escribiendo archivo de diccionario (" << dic_file_name << ")" << endl;
     random_shuffle(dict_arr, dict_arr+n);
     ofstream dic_file(dic_file_name);
     if (dic_file.is_open()) {
@@ -39,14 +46,14 @@ void save_dict_file(int type, uint n, uint dict_arr[]) {
         }
         dic_file.close();
     } else {
-//         cout<<"Could not write dictionary file '"<<dic_file_name<<"'"<<endl;
+        cout << "Error al escribir el diccionario '" << dic_file_name << "'" << endl;
         exit(0);
     }
 }
 
 void save_text_file(int type, uint n, uint m,float prob) {
     string txt_file_name(EXPER_PREFIX+to_string(type)+'-'+to_string(n)+'-'+to_string(m)+'-'+to_string(prob)+TXT_EXT);
-    cout<<"Writing text file ("<<txt_file_name<<")"<<endl;
+    cout << "Escribiendo archivo de texto (" << txt_file_name << ")" << endl;
     random_shuffle(text.begin(), text.end());
     ofstream txt_file(txt_file_name);
     if (txt_file.is_open()) {
@@ -56,7 +63,7 @@ void save_text_file(int type, uint n, uint m,float prob) {
         }
         txt_file.close();
     } else {
-//         cout<<"Could not write text file '"<<txt_file_name<<"'"<<endl;
+        cout<<"Error al escribir el texto '" << txt_file_name << "'" << endl;
         exit(0);
     } 
 }
@@ -81,7 +88,7 @@ void crear_diccionario(uint n, int experiment, uint dict_arr[]) {
 void crear_texto(int mfactor, uint n, float prob, int experiment, uint dict_arr[]) {
     text.clear();
     uint m = mfactor*n;
-    cout<<"Creando texto ("<<m<<" palabras)"<<endl;
+    cout << "Creando texto (" << m << " palabras)" << endl;
     
     text.resize(m);
     for (uint i = 0; i < m; ++i) {
@@ -119,9 +126,6 @@ int main() {
   ios_base::sync_with_stdio(0);
   cin.tie(0);
   
-  // initialize random seed
-//   srand(time(NULL));
-  
   srand(5);
   
   uint n;
@@ -144,8 +148,8 @@ int main() {
         cout << "Inserta la probabilidad que las palabras del texto esten en el diccionario" << endl;
         float prob;
         cin >> prob;
-        while (prob<0.0||prob>1.0) {
-            cout<<"La proporción de palabras [0% ... 100%] va de 0 .. 1.00"<<endl;
+        while (prob < 0.0 or prob > 1.0) {
+            cout<<"La proporción de palabras [0% .50%.. 100%] va de 0.. 0.5 1.00"<<endl;
             cin>>prob;
         } 
         
@@ -162,19 +166,15 @@ int main() {
         cin >> n;
         uint dict_arr2[n];
         crear_diccionario(n,expression,dict_arr2);
-        cout << "Por default se creara un texto para cada probabilidad desde [0% ... 100%], si quieres cambiarlo escribe 'cambiar' o simplemente pulsa enter" << endl;
-        if(cin.peek() != '\n') {
-            string order;
-            cin >> order;
-            for_each(order.begin(), order.end(), [](char & c) {
-                c = ::tolower(c);
-            });
-            if(order != "cambiar") {
-                cout << "Solo se acepta 'cambiar', sino pulsa enter" << endl;
-            } else {
-//               cambiar_probabilidades();  
-            }            
-        } else {
+        cout << "Por default se creara un texto para cada probabilidad desde [0% ... 100%]" << endl;
+        cout<<"1 - Default probabilidades"<<endl;
+        cout<<"2 - Crear nuevas probabilidades"<<endl;
+        int option;
+        cin >> option;        
+        if(option == 2) {
+            vector<float> new_probs = cambiar_probabilidades();
+            test_different_prob(n, expression, new_probs, dict_arr2);
+        } else if (option == 1) {
             test_different_prob(n, expression, probs, dict_arr2);
         }
         break;
@@ -182,4 +182,3 @@ int main() {
     }    
     cout << "The end." << endl;
 }
-
