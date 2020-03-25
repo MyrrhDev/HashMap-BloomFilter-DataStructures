@@ -46,7 +46,7 @@ public:
       for (uint i = 0; i<sizeof(int)/2; ++i)
         bits[bit] = (bits[bit]<<16)|(prng()&0xFFFF);
     }
-    bytes = index_mapping(siz, UIV(byte_range));
+    bytes = index_mapping(siz, vector<uint>(byte_range));
     for (uint byte = 0; byte < siz; ++byte) for (uint val=0; val<byte_range; ++val) {
       bytes[byte][val] = 0;
       for (uint bit = 0; bit < bits_per_byte; ++bit) if (val&(1U<<bit))

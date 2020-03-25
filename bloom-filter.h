@@ -15,19 +15,19 @@ private:
   // m is number of bits in the aray
   // n is the number of elements (max capacity)
   // k is number of hash functions
-  iint n, m, k;
+  int n, m, k;
   vector<bool> bits;
   vector<H> hashers;  
   
   
 public:
-  LL hash_cnt=0;
+  long long hash_cnt=0;
   
   BloomFilter(double falsepos, int n) : falsepos(falsepos), n(n) {
     const double ln2=log(2);
     m=ceil(-(n*log(falsepos)/(ln2*ln2)));
     k=ceil(ln2*m/n);
-    bits=BV(m, 0);
+    bits=vector<bool>(m, 0);
     hashers=vector<H>(k);
   }
   

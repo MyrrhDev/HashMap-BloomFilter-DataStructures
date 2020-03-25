@@ -15,7 +15,7 @@ template <typename H, typename=typename enable_if<is_base_of<Hasher, H>::value, 
 struct SeparateChainingHashTableSet {
   
 public:
-  
+    long long hash_cnt = 0;
 private:
     // numero de elementos de la tabla
     int counter;      
@@ -27,6 +27,7 @@ private:
         hash_table_vector table_tmp(2*table.size());
         for (uint i = 0; i < table.size(); ++i) {
             for (auto it = table[i].begin(); it!=table[i].end(); ++it) {
+                ++hash_cnt;
                 int key = *it;
                 uint position = hasher.get_hash(key)%table_tmp.size();
                 table_tmp[position].insert(key);
@@ -43,9 +44,10 @@ public:
     }
   
     void insert(int key) {
+        ++hash_cnt;
         uint position = hasher.get_hash(key)%table.size();
         auto it = table[position].find(key);
-        if (it! = table[position].end()) return;
+        if (it != table[position].end()) return;
         
         table[position].insert(key);
         ++counter;
@@ -55,13 +57,14 @@ public:
     void erase(int key) {
         uint position = hasher.get_hash(key)%table.size();
         auto it = table[position].find(key);
-        if (it! = table[position].end()) table[position].erase(it);
+        if (it != table[position].end()) table[position].erase(it);
     }  
 
     bool contains(int key) {
+        ++hash_cnt;
         uint position = hasher.get_hash(key)%table.size();
         auto it = table[position].find(key);
-        if (it! = table[position].end()) return true;
+        if (it != table[position].end()) return true;
         return false;
     }  
 };
@@ -73,15 +76,16 @@ struct SeparateChainingHashTableList {
   
 public:
 //     HashTableEntry **ht, **top;
+    long long hash_cnt = 0;
   
 private:
     struct HashTableEntry {
-        int value, key;
+        int key;
         HashTableEntry *next;
         HashTableEntry *prev;
-        HashTableEntry(int key, int value) {
+        HashTableEntry(int key) {
             this->key = key;
-            this->value = value;
+//             this->value = value;
             this->next = NULL;
         }
     };
@@ -98,8 +102,8 @@ public:
         }
     } 
         
-    void insert(int key, int value) {
-        //uint
+    void insert(int key) {
+        ++hash_cnt;
         int hash_v = hasher.get_hash(key)%TABLE_SIZE;
         HashTableEntry* prev = NULL;
         HashTableEntry* en = hash_table[hash_v];
@@ -108,15 +112,15 @@ public:
             en = en->next;
         }
         if (en == NULL) {
-            en = new HashTableEntry(key, value);
+            en = new HashTableEntry(key);
             if (prev == NULL) {
                 hash_table[hash_v] = en;
             } else {
                 prev->next = en;
             }
-        } else {
+        } /*else {
             en->value = value;
-        }
+        }*/
     }
     
     void erase(int key) {
@@ -136,6 +140,7 @@ public:
     }
     
     bool contains(int key) {
+        ++hash_cnt;
         int hash_v = hasher.get_hash(key)%TABLE_SIZE;
         HashTableEntry* en = hash_table[hash_v];
         if (en != NULL) {

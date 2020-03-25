@@ -10,6 +10,7 @@ template <typename H, typename=typename enable_if<is_base_of<Hasher, H>::value, 
 class OpenAddressingHashTable {
   
 public:
+    long long hash_cnt=0;
   
 private:
     // numero de elementos
@@ -20,6 +21,7 @@ private:
     H hasher;
 
     inline uint slot(int key, const vector<int*> &table) {
+        ++hash_cnt;
         uint pos = hasher.get_hash(key)%table.size();
         while (table[pos] != NULL) {
             if (*table[pos] == key) return pos;
@@ -65,7 +67,8 @@ public:
       bool loop = true;
       while (loop) {       
         ++nex_pos%=hash_table.size();
-        if (hash_table[nex_pos] == NULL) return;        
+        if (hash_table[nex_pos] == NULL) return;
+        ++hash_cnt;
         uint p = hasher.get_hash(*hash_table[nex_pos])%hash_table.size();
         loop = pos<=nex_pos?pos<p&&p<=nex_pos:pos<p||p<=nex_pos;
       }     
