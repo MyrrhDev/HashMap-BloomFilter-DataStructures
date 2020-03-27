@@ -3,7 +3,7 @@
 
 Implementation and testing of open addressing & separate chaining hash tables versus bloom filters and a text-generating algorithm.
 
-###Some results:
+### Some results:
 
 
 ![Separate-chaining sets](/graphs/sep-chsets.jpg)
