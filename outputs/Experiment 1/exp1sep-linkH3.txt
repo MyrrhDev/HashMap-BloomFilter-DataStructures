@@ -1,0 +1,52 @@
+Experimento 1: exper-1-1000-2000-0.500000
+ Con separate chaining-single linked list y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 1000
+  Hashes en search() 2000
+  Total hashes 3000
+
+  Se han encontrado: 997 palabras (49.85%)
+
+Total time (s): 0.000422001; init (s): 0.000122786; check (s): 0.000299215
+
+Experimento 1: exper-1-1000-3000-0.500000
+ Con separate chaining-single linked list y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 3000 palabras
+
+  Hashes al insertar() 1000
+  Hashes en search() 3000
+  Total hashes 4000
+
+  Se han encontrado: 1547 palabras (51.5667%)
+
+Total time (s): 0.000552893; init (s): 0.000112772; check (s): 0.000440121
+
+Experimento 1: exper-1-1000-4000-0.500000
+ Con separate chaining-single linked list y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 4000 palabras
+
+  Hashes al insertar() 1000
+  Hashes en search() 4000
+  Total hashes 5000
+
+  Se han encontrado: 2055 palabras (51.375%)
+
+Total time (s): 0.000687122; init (s): 0.000112057; check (s): 0.000575066
+
+Experimento 1: exper-1-1000-5000-0.500000
+ Con separate chaining-single linked list y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 5000 palabras
+
+  Hashes al insertar() 1000
+  Hashes en search() 5000
+  Total hashes 6000
+
+  Se han encontrado: 2563 palabras (51.26%)
+
+Total time (s): 0.000874996; init (s): 0.000108957; check (s): 0.000766039
+

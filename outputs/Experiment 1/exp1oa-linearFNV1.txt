@@ -1,0 +1,52 @@
+Experimento 1: exper-1-1000-2000-0.500000
+ Con open addressing-linear y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2114
+  Hashes en search() 2000
+  Total hashes 4114
+
+  Se han encontrado: 997 palabras (49.85%)
+
+Total time (s): 0.00071907; init (s): 0.00039506; check (s): 0.000324011
+
+Experimento 1: exper-1-1000-3000-0.500000
+ Con open addressing-linear y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 3000 palabras
+
+  Hashes al insertar() 2114
+  Hashes en search() 3000
+  Total hashes 5114
+
+  Se han encontrado: 1547 palabras (51.5667%)
+
+Total time (s): 0.000720978; init (s): 0.000298023; check (s): 0.000422955
+
+Experimento 1: exper-1-1000-4000-0.500000
+ Con open addressing-linear y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 4000 palabras
+
+  Hashes al insertar() 2114
+  Hashes en search() 4000
+  Total hashes 6114
+
+  Se han encontrado: 2055 palabras (51.375%)
+
+Total time (s): 0.000737906; init (s): 0.000294924; check (s): 0.000442982
+
+Experimento 1: exper-1-1000-5000-0.500000
+ Con open addressing-linear y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 5000 palabras
+
+  Hashes al insertar() 2114
+  Hashes en search() 5000
+  Total hashes 7114
+
+  Se han encontrado: 2563 palabras (51.26%)
+
+Total time (s): 0.000347137; init (s): 0.000103951; check (s): 0.000243187
+

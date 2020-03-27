@@ -1,0 +1,143 @@
+Experimento 2: exper-2-1000-2000-0.000000
+ Con separate chaining-set y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 18 palabras (0.9%)
+
+Total time (s): 0.000937939; init (s): 0.000776052; check (s): 0.000161886
+
+Experimento 2: exper-2-1000-2000-0.100000
+ Con separate chaining-set y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 203 palabras (10.15%)
+
+Total time (s): 0.000794888; init (s): 0.000632048; check (s): 0.00016284
+
+Experimento 2: exper-2-1000-2000-0.200000
+ Con separate chaining-set y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 417 palabras (20.85%)
+
+Total time (s): 0.000808001; init (s): 0.00064683; check (s): 0.000161171
+
+Experimento 2: exper-2-1000-2000-0.300000
+ Con separate chaining-set y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 626 palabras (31.3%)
+
+Total time (s): 0.000855923; init (s): 0.000691891; check (s): 0.000164032
+
+Experimento 2: exper-2-1000-2000-0.400000
+ Con separate chaining-set y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 866 palabras (43.3%)
+
+Total time (s): 0.000822067; init (s): 0.000748158; check (s): 7.39098e-05
+
+Experimento 2: exper-2-1000-2000-0.500000
+ Con separate chaining-set y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 1025 palabras (51.25%)
+
+Total time (s): 0.000306845; init (s): 0.000247955; check (s): 5.88894e-05
+
+Experimento 2: exper-2-1000-2000-0.600000
+ Con separate chaining-set y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 1174 palabras (58.7%)
+
+Total time (s): 0.000430107; init (s): 0.000372171; check (s): 5.79357e-05
+
+Experimento 2: exper-2-1000-2000-0.700000
+ Con separate chaining-set y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 1414 palabras (70.7%)
+
+Total time (s): 0.000255823; init (s): 0.000205994; check (s): 4.98295e-05
+
+Experimento 2: exper-2-1000-2000-0.800000
+ Con separate chaining-set y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 1602 palabras (80.1%)
+
+Total time (s): 0.000251055; init (s): 0.000202179; check (s): 4.88758e-05
+
+Experimento 2: exper-2-1000-2000-0.900000
+ Con separate chaining-set y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 1852 palabras (92.6%)
+
+Total time (s): 0.000267029; init (s): 0.000219107; check (s): 4.79221e-05
+
+Experimento 2: exper-2-1000-2000-1.000000
+ Con separate chaining-set y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 2000 palabras (100%)
+
+Total time (s): 0.000236988; init (s): 0.000190973; check (s): 4.60148e-05
+

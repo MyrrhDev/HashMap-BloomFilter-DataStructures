@@ -1,0 +1,52 @@
+Experimento 1: exper-1-1000-2000-0.500000
+ Con open addressing-double hash y la funcion de hash: Murmur3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2877
+  Hashes en search() 3048
+  Total hashes 5925
+
+  Se han encontrado: 997 palabras (49.85%)
+
+Total time (s): 0.000612974; init (s): 0.000310898; check (s): 0.000302076
+
+Experimento 1: exper-1-1000-3000-0.500000
+ Con open addressing-double hash y la funcion de hash: Murmur3
+ Diccionario de 1000 palabras
+ Texto de 3000 palabras
+
+  Hashes al insertar() 2878
+  Hashes en search() 4602
+  Total hashes 7480
+
+  Se han encontrado: 1547 palabras (51.5667%)
+
+Total time (s): 0.000887156; init (s): 0.000442028; check (s): 0.000445127
+
+Experimento 1: exper-1-1000-4000-0.500000
+ Con open addressing-double hash y la funcion de hash: Murmur3
+ Diccionario de 1000 palabras
+ Texto de 4000 palabras
+
+  Hashes al insertar() 2903
+  Hashes en search() 6085
+  Total hashes 8988
+
+  Se han encontrado: 2055 palabras (51.375%)
+
+Total time (s): 5.29975; init (s): 5.29955; check (s): 0.000200987
+
+Experimento 1: exper-1-1000-5000-0.500000
+ Con open addressing-double hash y la funcion de hash: Murmur3
+ Diccionario de 1000 palabras
+ Texto de 5000 palabras
+
+  Hashes al insertar() 2954
+  Hashes en search() 7662
+  Total hashes 10616
+
+  Se han encontrado: 2563 palabras (51.26%)
+
+Total time (s): 0.000288963; init (s): 8.98838e-05; check (s): 0.00019908
+

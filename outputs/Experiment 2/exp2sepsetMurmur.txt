@@ -1,0 +1,143 @@
+Experimento 2: exper-2-1000-2000-0.000000
+ Con separate chaining-set y la funcion de hash: Murmur3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 18 palabras (0.9%)
+
+Total time (s): 0.000344038; init (s): 0.000283957; check (s): 6.00815e-05
+
+Experimento 2: exper-2-1000-2000-0.100000
+ Con separate chaining-set y la funcion de hash: Murmur3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 203 palabras (10.15%)
+
+Total time (s): 0.000241041; init (s): 0.000190973; check (s): 5.00679e-05
+
+Experimento 2: exper-2-1000-2000-0.200000
+ Con separate chaining-set y la funcion de hash: Murmur3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 417 palabras (20.85%)
+
+Total time (s): 0.000341892; init (s): 0.000258923; check (s): 8.29697e-05
+
+Experimento 2: exper-2-1000-2000-0.300000
+ Con separate chaining-set y la funcion de hash: Murmur3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 626 palabras (31.3%)
+
+Total time (s): 0.000257015; init (s): 0.000206947; check (s): 5.00679e-05
+
+Experimento 2: exper-2-1000-2000-0.400000
+ Con separate chaining-set y la funcion de hash: Murmur3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 866 palabras (43.3%)
+
+Total time (s): 0.000232935; init (s): 0.000185013; check (s): 4.79221e-05
+
+Experimento 2: exper-2-1000-2000-0.500000
+ Con separate chaining-set y la funcion de hash: Murmur3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 1025 palabras (51.25%)
+
+Total time (s): 0.000261068; init (s): 0.000197887; check (s): 6.31809e-05
+
+Experimento 2: exper-2-1000-2000-0.600000
+ Con separate chaining-set y la funcion de hash: Murmur3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 1174 palabras (58.7%)
+
+Total time (s): 0.000249147; init (s): 0.00019908; check (s): 5.00679e-05
+
+Experimento 2: exper-2-1000-2000-0.700000
+ Con separate chaining-set y la funcion de hash: Murmur3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 1414 palabras (70.7%)
+
+Total time (s): 0.000236034; init (s): 0.000189066; check (s): 4.69685e-05
+
+Experimento 2: exper-2-1000-2000-0.800000
+ Con separate chaining-set y la funcion de hash: Murmur3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 1602 palabras (80.1%)
+
+Total time (s): 0.000235081; init (s): 0.000188112; check (s): 4.69685e-05
+
+Experimento 2: exper-2-1000-2000-0.900000
+ Con separate chaining-set y la funcion de hash: Murmur3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 1852 palabras (92.6%)
+
+Total time (s): 0.000231028; init (s): 0.000186205; check (s): 4.48227e-05
+
+Experimento 2: exper-2-1000-2000-1.000000
+ Con separate chaining-set y la funcion de hash: Murmur3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2386
+  Hashes en search() 2000
+  Total hashes 4386
+
+  Se han encontrado: 2000 palabras (100%)
+
+Total time (s): 0.000243902; init (s): 0.00019908; check (s): 4.48227e-05
+

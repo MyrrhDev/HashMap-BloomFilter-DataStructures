@@ -1,0 +1,43 @@
+Experimento 2: exper-2-1000-2000-0.000000
+ Con open addressing-double hash y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2114
+  Hashes en search() 2000
+  Total hashes 4114
+
+  Se han encontrado: 18 palabras (0.9%)
+
+Total time (s): 0.000194073; init (s): 9.799e-05; check (s): 9.60827e-05
+
+Experimento 2: exper-2-1000-2000-0.100000
+ Con open addressing-double hash y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2114
+  Hashes en search() 2000
+  Total hashes 4114
+
+  Se han encontrado: 203 palabras (10.15%)
+
+Total time (s): 0.000185013; init (s): 9.70364e-05; check (s): 8.79765e-05
+
+Experimento 2: exper-2-1000-2000-0.200000
+ Con open addressing-double hash y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2114
+  Hashes en search() 2000
+  Total hashes 4114
+
+  Se han encontrado: 417 palabras (20.85%)
+
+Total time (s): 0.000178099; init (s): 8.98838e-05; check (s): 8.82149e-05
+
+Experimento 2: exper-2-1000-2000-0.300000
+ Con open addressing-double hash y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras

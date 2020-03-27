@@ -77,7 +77,7 @@ void read_console(int argc, char** argv) {
     ++index;
     if (argc > index and !strcmp(argv[index],"oa-linear")) algo = 1;
     else if (argc > index and !strcmp(argv[index],"oa-double")) algo = 2;
-    else if (argc > index and !strcmp(argv[index],"sepset")) algo = 3;
+    else if (argc > index and !strcmp(argv[index],"sep-set")) algo = 3;
     else if (argc > index and !strcmp(argv[index],"sep-linked")) algo = 4;
     else if (argc > index and !strcmp(argv[index],"bloom")) algo = 5;
     else read_console_error();    
@@ -159,7 +159,7 @@ void run_experiment1() {
 void run_experiment2() {
     vector<int> dic;
     for (const string &name : dicts) {
-        read_dic(EXP1_FOLDER, name, dic);
+        read_dic(EXP2_FOLDER, name, dic);
     }    
     for (const string &name : texts) {
         total_secs=total_start=total_contained=0;
@@ -177,26 +177,26 @@ int ht_open_addressing_search(vector<int> &dic, vector<int> &txt) {
         case 1:
         {
             if (hash_func==1) {
-                OpenAddressingHashTable<H3> ht;
+                OpenAddressingHashTableLinear<H3> ht;
                 return perform_contains(ht, dic, txt);
             } else if (hash_func==2) {
-                OpenAddressingHashTable<FNV1> ht;
+                OpenAddressingHashTableLinear<FNV1> ht;
                 return perform_contains(ht, dic, txt);
             } else if (hash_func==3) {
-                OpenAddressingHashTable<Murmur3> ht;
+                OpenAddressingHashTableLinear<Murmur3> ht;
                 return perform_contains(ht, dic, txt);
             }
         }
         case 2:
         {
             if (hash_func==1) {
-                OpenAddressingHashTable<H3> ht;
+                OpenAddressingHashTableDouble<H3> ht;
                 return perform_contains(ht, dic, txt);
             } else if (hash_func==2) {
-                OpenAddressingHashTable<FNV1> ht;
+                OpenAddressingHashTableDouble<FNV1> ht;
                 return perform_contains(ht, dic, txt);
             } else if (hash_func==3) {
-                OpenAddressingHashTable<Murmur3> ht;
+                OpenAddressingHashTableDouble<Murmur3> ht;
                 return perform_contains(ht, dic, txt);
             }
         }

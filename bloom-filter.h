@@ -25,24 +25,24 @@ public:
   
   BloomFilter(double falsepos, int n) : falsepos(falsepos), n(n) {
     const double ln2=log(2);
-    m=ceil(-(n*log(falsepos)/(ln2*ln2)));
-    k=ceil(ln2*m/n);
-    bits=vector<bool>(m, 0);
-    hashers=vector<H>(k);
+    m = ceil(-(n*log(falsepos)/(ln2*ln2)));
+    k = ceil(ln2*m/n);
+    bits = vector<bool>(m, 0);
+    hashers = vector<H>(k);
   }
   
   void insert(int value) {
     for (int i=0; i<k; ++i) {
       ++hash_cnt;      
-      uint h=hashers[i].get_hash(value);
-      bits[h%m]=1;
+      uint h = hashers[i].get_hash(value);
+      bits[h%m] = 1;
     }
   }
   
   bool contains(int value) {
     for (int i=0; i<k; ++i) {
       ++hash_cnt;      
-      uint h=hashers[i].get_hash(value);
+      uint h = hashers[i].get_hash(value);
       if (!bits[h%m]) return 0;
     }
     return 1;

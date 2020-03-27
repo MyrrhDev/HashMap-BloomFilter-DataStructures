@@ -1,0 +1,52 @@
+Experimento 1: exper-1-1000-2000-0.500000
+ Con Bloom filter y la funcion de hash: Murmur3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 12003
+  Total hashes 22003
+
+  Se han encontrado: 997 palabras (49.85%)
+
+Total time (s): 0.000361919; init (s): 0.000159979; check (s): 0.000201941
+
+Experimento 1: exper-1-1000-3000-0.500000
+ Con Bloom filter y la funcion de hash: Murmur3
+ Diccionario de 1000 palabras
+ Texto de 3000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 18401
+  Total hashes 28401
+
+  Se han encontrado: 1547 palabras (51.5667%)
+
+Total time (s): 0.000324011; init (s): 9.70364e-05; check (s): 0.000226974
+
+Experimento 1: exper-1-1000-4000-0.500000
+ Con Bloom filter y la funcion de hash: Murmur3
+ Diccionario de 1000 palabras
+ Texto de 4000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 24525
+  Total hashes 34525
+
+  Se han encontrado: 2060 palabras (51.5%)
+
+Total time (s): 0.000351906; init (s): 9.48906e-05; check (s): 0.000257015
+
+Experimento 1: exper-1-1000-5000-0.500000
+ Con Bloom filter y la funcion de hash: Murmur3
+ Diccionario de 1000 palabras
+ Texto de 5000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 30595
+  Total hashes 40595
+
+  Se han encontrado: 2566 palabras (51.32%)
+
+Total time (s): 0.0004251; init (s): 0.000106096; check (s): 0.000319004
+

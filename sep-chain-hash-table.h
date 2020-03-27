@@ -20,8 +20,7 @@ private:
     // numero de elementos de la tabla
     int counter;      
     hash_table_vector table;
-    H hasher;
-  
+    H hasher;  
   
     void resize() {
         hash_table_vector table_tmp(2*table.size());
@@ -75,7 +74,6 @@ template <typename H, typename=typename enable_if<is_base_of<Hasher, H>::value, 
 struct SeparateChainingHashTableList {
   
 public:
-//     HashTableEntry **ht, **top;
     long long hash_cnt = 0;
   
 private:
@@ -85,13 +83,12 @@ private:
         HashTableEntry *prev;
         HashTableEntry(int key) {
             this->key = key;
-//             this->value = value;
             this->next = NULL;
         }
     };
     
     HashTableEntry **hash_table, **top;
-    H hasher;     // hashers
+    H hasher;
   
   
 public:  
@@ -118,9 +115,7 @@ public:
             } else {
                 prev->next = en;
             }
-        } /*else {
-            en->value = value;
-        }*/
+        }
     }
     
     void erase(int key) {

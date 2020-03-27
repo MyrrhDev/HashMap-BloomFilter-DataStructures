@@ -1,0 +1,143 @@
+Experimento 2: exper-2-1000-2000-0.000000
+ Con Bloom filter y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 4263
+  Total hashes 14263
+
+  Se han encontrado: 19 palabras (0.95%)
+
+Total time (s): 0.000304937; init (s): 0.000176907; check (s): 0.000128031
+
+Experimento 2: exper-2-1000-2000-0.100000
+ Con Bloom filter y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 5581
+  Total hashes 15581
+
+  Se han encontrado: 205 palabras (10.25%)
+
+Total time (s): 0.000363111; init (s): 0.000178099; check (s): 0.000185013
+
+Experimento 2: exper-2-1000-2000-0.200000
+ Con Bloom filter y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 7393
+  Total hashes 17393
+
+  Se han encontrado: 419 palabras (20.95%)
+
+Total time (s): 0.000377178; init (s): 0.000172138; check (s): 0.00020504
+
+Experimento 2: exper-2-1000-2000-0.300000
+ Con Bloom filter y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 9024
+  Total hashes 19024
+
+  Se han encontrado: 627 palabras (31.35%)
+
+Total time (s): 0.00039196; init (s): 0.000172138; check (s): 0.000219822
+
+Experimento 2: exper-2-1000-2000-0.400000
+ Con Bloom filter y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 10943
+  Total hashes 20943
+
+  Se han encontrado: 867 palabras (43.35%)
+
+Total time (s): 0.000187874; init (s): 7.48634e-05; check (s): 0.00011301
+
+Experimento 2: exper-2-1000-2000-0.500000
+ Con Bloom filter y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 12130
+  Total hashes 22130
+
+  Se han encontrado: 1025 palabras (51.25%)
+
+Total time (s): 0.000182152; init (s): 7.51019e-05; check (s): 0.00010705
+
+Experimento 2: exper-2-1000-2000-0.600000
+ Con Bloom filter y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 13318
+  Total hashes 23318
+
+  Se han encontrado: 1174 palabras (58.7%)
+
+Total time (s): 0.00018692; init (s): 7.51019e-05; check (s): 0.000111818
+
+Experimento 2: exper-2-1000-2000-0.700000
+ Con Bloom filter y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 15367
+  Total hashes 25367
+
+  Se han encontrado: 1417 palabras (70.85%)
+
+Total time (s): 0.00019598; init (s): 7.39098e-05; check (s): 0.00012207
+
+Experimento 2: exper-2-1000-2000-0.800000
+ Con Bloom filter y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 16771
+  Total hashes 26771
+
+  Se han encontrado: 1602 palabras (80.1%)
+
+Total time (s): 0.000201941; init (s): 7.51019e-05; check (s): 0.000126839
+
+Experimento 2: exper-2-1000-2000-0.900000
+ Con Bloom filter y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 18812
+  Total hashes 28812
+
+  Se han encontrado: 1852 palabras (92.6%)
+
+Total time (s): 0.000252008; init (s): 7.60555e-05; check (s): 0.000175953
+
+Experimento 2: exper-2-1000-2000-1.000000
+ Con Bloom filter y la funcion de hash: H3
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 20000
+  Total hashes 30000
+
+  Se han encontrado: 2000 palabras (100%)
+
+Total time (s): 0.000448942; init (s): 0.000202894; check (s): 0.000246048
+

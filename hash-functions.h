@@ -9,18 +9,6 @@ using namespace std;
 typedef vector<uint> unsigned_vector;
 typedef vector<unsigned_vector> index_mapping;
 
-
-// super basic hash function:
-// A mapping function that maps a key to a
-// number in the range 0 to TableSize -1
-// int hashfunc(int integer_key)
-// {
-// return integer_key % HASHTABLESIZE;
-// }
-
-
-
-// clase abstracta de la que heredaran los hashers
 class Hasher {
 public:  
     virtual uint get_hash(int data) const=0;
@@ -36,9 +24,8 @@ private:
   size_t siz;  
   
 public:  
-  // constructor
   H3(uint seed = rand()) {
-    siz = sizeof(int);  // n = sizeof(objects_to_hash)
+    siz = sizeof(int);
     minstd_rand0 prng(seed);
     uint bits[siz*bits_per_byte];
     for (uint bit = 0; bit < siz*bits_per_byte; ++bit) {
@@ -54,12 +41,10 @@ public:
     }
   }
   
-  // hash an object
   uint get_hash(int data) const {
     int offset = 0;
     auto *p = static_cast<unsigned char const*>((void const*)&data);
     uint result = 0;
-    // Duff's Device.
     uint n=(siz+3)/4;
     switch (siz%4) {
       case 0: do { result^=bytes[offset++][*p++];
@@ -74,13 +59,11 @@ public:
 };
 
 #define ROTL(x, n) (((x)<<(n))|((x)>>(32-(n))))
-class Murmur3 : public Hasher {
-  
+class Murmur3 : public Hasher {  
 private:
   uint mseed;
     
 public:
-  
   Murmur3(uint seed=rand()) {
     mseed=seed;
   }
@@ -98,10 +81,8 @@ public:
     
     hash ^= k;
     hash = ROTL(hash, 13); 
-    hash = hash*5+0xe6546b64;
-    
+    hash = hash*5+0xe6546b64;    
     hash ^= 1U;
-    //hash=fmix(hash);
     hash ^= hash>>16;
     hash *= 0x85ebca6b;
     hash ^= hash>>13;
@@ -112,11 +93,9 @@ public:
 };
 
 
-// Fowler–Noll–Vo hash function for int type
-class FNV1 : public Hasher {
-  
-private:
-  
+// Fowler–Noll–Vo hash function
+class FNV1 : public Hasher {  
+private:  
   uint fnv_prime;
   uint fnv_offset_basis;
   
@@ -137,13 +116,13 @@ public:
   }
   
   uint get_hash(int x) const {
-    uint hash = fnv_offset_basis;      // hash = FNV_offset_basis
+    uint hash = fnv_offset_basis; 
     auto *p = static_cast<unsigned char const*>((void const*)&x);
-    for (uint i = 0; i < 4; ++i) {    // for each byte_of_data to be hashed
-      hash *= fnv_prime;               // hash = hash × FNV_prime
-      hash ^= *p++;                    // hash = hash XOR byte_of_data
+    for (uint i = 0; i < 4; ++i) {
+      hash *= fnv_prime;
+      hash ^= *p++;
     }
-    return hash;                     // return hash
+    return hash;
   }
   
 };

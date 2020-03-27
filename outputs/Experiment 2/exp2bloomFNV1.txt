@@ -1,0 +1,143 @@
+Experimento 2: exper-2-1000-2000-0.000000
+ Con Bloom filter y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 4168
+  Total hashes 14168
+
+  Se han encontrado: 19 palabras (0.95%)
+
+Total time (s): 0.000133991; init (s): 6.79493e-05; check (s): 6.60419e-05
+
+Experimento 2: exper-2-1000-2000-0.100000
+ Con Bloom filter y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 5612
+  Total hashes 15612
+
+  Se han encontrado: 205 palabras (10.25%)
+
+Total time (s): 0.000140905; init (s): 6.69956e-05; check (s): 7.39098e-05
+
+Experimento 2: exper-2-1000-2000-0.200000
+ Con Bloom filter y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 7311
+  Total hashes 17311
+
+  Se han encontrado: 419 palabras (20.95%)
+
+Total time (s): 0.000241995; init (s): 0.000111103; check (s): 0.000130892
+
+Experimento 2: exper-2-1000-2000-0.300000
+ Con Bloom filter y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 9081
+  Total hashes 19081
+
+  Se han encontrado: 627 palabras (31.35%)
+
+Total time (s): 0.000251055; init (s): 0.000110865; check (s): 0.00014019
+
+Experimento 2: exper-2-1000-2000-0.400000
+ Con Bloom filter y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 11006
+  Total hashes 21006
+
+  Se han encontrado: 867 palabras (43.35%)
+
+Total time (s): 0.000272989; init (s): 0.000120878; check (s): 0.000152111
+
+Experimento 2: exper-2-1000-2000-0.500000
+ Con Bloom filter y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 12175
+  Total hashes 22175
+
+  Se han encontrado: 1025 palabras (51.25%)
+
+Total time (s): 0.000268936; init (s): 0.000110149; check (s): 0.000158787
+
+Experimento 2: exper-2-1000-2000-0.600000
+ Con Bloom filter y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 13346
+  Total hashes 23346
+
+  Se han encontrado: 1174 palabras (58.7%)
+
+Total time (s): 0.00036788; init (s): 0.000148058; check (s): 0.000219822
+
+Experimento 2: exper-2-1000-2000-0.700000
+ Con Bloom filter y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 15276
+  Total hashes 25276
+
+  Se han encontrado: 1415 palabras (70.75%)
+
+Total time (s): 0.000411987; init (s): 0.000159979; check (s): 0.000252008
+
+Experimento 2: exper-2-1000-2000-0.800000
+ Con Bloom filter y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 16794
+  Total hashes 26794
+
+  Se han encontrado: 1602 palabras (80.1%)
+
+Total time (s): 0.000574112; init (s): 0.000305891; check (s): 0.000268221
+
+Experimento 2: exper-2-1000-2000-0.900000
+ Con Bloom filter y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 18823
+  Total hashes 28823
+
+  Se han encontrado: 1852 palabras (92.6%)
+
+Total time (s): 0.000494003; init (s): 0.000169992; check (s): 0.000324011
+
+Experimento 2: exper-2-1000-2000-1.000000
+ Con Bloom filter y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 10000
+  Hashes en search() 20000
+  Total hashes 30000
+
+  Se han encontrado: 2000 palabras (100%)
+
+Total time (s): 0.000484943; init (s): 0.000170946; check (s): 0.000313997
+

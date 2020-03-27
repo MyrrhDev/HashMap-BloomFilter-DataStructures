@@ -1,0 +1,143 @@
+Experimento 2: exper-2-1000-2000-0.000000
+ Con open addressing-double hash y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2114
+  Hashes en search() 2000
+  Total hashes 4114
+
+  Se han encontrado: 18 palabras (0.9%)
+
+Total time (s): 0.000556946; init (s): 0.000294924; check (s): 0.000262022
+
+Experimento 2: exper-2-1000-2000-0.100000
+ Con open addressing-double hash y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2114
+  Hashes en search() 2000
+  Total hashes 4114
+
+  Se han encontrado: 203 palabras (10.15%)
+
+Total time (s): 0.000519037; init (s): 0.00027585; check (s): 0.000243187
+
+Experimento 2: exper-2-1000-2000-0.200000
+ Con open addressing-double hash y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2114
+  Hashes en search() 2000
+  Total hashes 4114
+
+  Se han encontrado: 417 palabras (20.85%)
+
+Total time (s): 0.000450134; init (s): 0.000237226; check (s): 0.000212908
+
+Experimento 2: exper-2-1000-2000-0.300000
+ Con open addressing-double hash y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2114
+  Hashes en search() 2000
+  Total hashes 4114
+
+  Se han encontrado: 626 palabras (31.3%)
+
+Total time (s): 0.000451088; init (s): 0.000240088; check (s): 0.000211
+
+Experimento 2: exper-2-1000-2000-0.400000
+ Con open addressing-double hash y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2114
+  Hashes en search() 2000
+  Total hashes 4114
+
+  Se han encontrado: 866 palabras (43.3%)
+
+Total time (s): 0.000434875; init (s): 0.000223875; check (s): 0.000211
+
+Experimento 2: exper-2-1000-2000-0.500000
+ Con open addressing-double hash y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2114
+  Hashes en search() 2000
+  Total hashes 4114
+
+  Se han encontrado: 1025 palabras (51.25%)
+
+Total time (s): 0.000237942; init (s): 0.000126839; check (s): 0.000111103
+
+Experimento 2: exper-2-1000-2000-0.600000
+ Con open addressing-double hash y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2114
+  Hashes en search() 2000
+  Total hashes 4114
+
+  Se han encontrado: 1174 palabras (58.7%)
+
+Total time (s): 0.000281096; init (s): 0.000161886; check (s): 0.000119209
+
+Experimento 2: exper-2-1000-2000-0.700000
+ Con open addressing-double hash y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2114
+  Hashes en search() 2000
+  Total hashes 4114
+
+  Se han encontrado: 1414 palabras (70.7%)
+
+Total time (s): 0.000196934; init (s): 0.000108957; check (s): 8.79765e-05
+
+Experimento 2: exper-2-1000-2000-0.800000
+ Con open addressing-double hash y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2114
+  Hashes en search() 2000
+  Total hashes 4114
+
+  Se han encontrado: 1602 palabras (80.1%)
+
+Total time (s): 0.000188112; init (s): 0.000108004; check (s): 8.01086e-05
+
+Experimento 2: exper-2-1000-2000-0.900000
+ Con open addressing-double hash y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2114
+  Hashes en search() 2000
+  Total hashes 4114
+
+  Se han encontrado: 1852 palabras (92.6%)
+
+Total time (s): 0.00017786; init (s): 0.000106812; check (s): 7.10487e-05
+
+Experimento 2: exper-2-1000-2000-1.000000
+ Con open addressing-double hash y la funcion de hash: FNV1
+ Diccionario de 1000 palabras
+ Texto de 2000 palabras
+
+  Hashes al insertar() 2114
+  Hashes en search() 2000
+  Total hashes 4114
+
+  Se han encontrado: 2000 palabras (100%)
+
+Total time (s): 0.000169039; init (s): 0.000106096; check (s): 6.29425e-05
+
